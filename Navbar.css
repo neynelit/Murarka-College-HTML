@@ -1,0 +1,282 @@
+.topnav{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.topnav .container-fluid{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-brand{
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar-brand img{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-brand h3{
+    padding: 17px 0px 0px 5px;
+    font-size: 35px;
+    font-family: "Roboto Slab", serif;
+    color: rgb(187, 0, 0);
+    font-weight: 600;
+}
+
+.navbar-brand-ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-brand-ul .navbar-brand-li{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-brand-ul .navbar-brand-li img{
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand-ul .navbar-brand-li h5{
+    font-size: 18px;
+    padding: 5px;
+    font-family: "Roboto Slab", serif;
+    color: rgb(187, 0, 0);
+    font-weight: 400;
+}
+
+/* middle nav */
+
+.midnav{
+    padding: 0;
+}
+
+.midnav .container-fluid{
+    padding: 0;
+    background-color: rgb(187, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.midnav .container-fluid .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.midnav .container-fluid .navbar-nav .nav-item{
+    padding: 1px 5px;
+}
+
+.midnav .container-fluid .navbar-nav .nav-item .nav-link{
+    color: white;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.midnav .container-fluid .navbar-nav .nav-item .nav-link:hover{
+    background-color: white;
+    color: rgb(187, 0, 0);
+}
+
+
+.midnav .container-fluid .navbar-nav .nav-item .dropdown-menu{
+    background-color: rgb(187, 0, 0);
+}
+
+.midnav .container-fluid .navbar-nav .nav-item .dropdown-menu-li .dropdown-item{
+    color: white;
+}
+
+.midnav .container-fluid .navbar-nav .nav-item .dropdown-menu-li .dropdown-item:hover{
+    color: rgb(187, 0, 0);
+    background-color: white;
+}
+
+.dropdown-submenu{
+    padding: 4px 0px;
+}
+
+.dropdown-submenu .test{
+    color: white;
+    padding-left: 23px;
+    text-decoration: none;
+}
+
+.dropdown-submenu:hover{
+    background-color: white;
+}
+
+.dropdown-submenu:hover .test{
+    color: rgb(187, 0, 0);
+}
+
+.dropdown-submenu .dropdown-menu li{
+    padding: 3px 0px;
+    padding-left: 3px;
+}
+
+.dropdown-submenu .dropdown-menu li:hover{
+    background-color: white;
+}
+
+.dropdown-submenu .dropdown-menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown-submenu .dropdown-menu li:hover a{
+    color: rgb(187, 0, 0);
+}
+
+/* bottom nav */
+
+.botnav{
+    display: none;
+    padding: 0;
+}
+
+.botnav .container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    background-color: white;
+    border-top: 1px solid rgb(187, 0, 0);
+    border-bottom: 1px solid rgb(187, 0, 0);
+    padding: 5px;
+}
+
+.botnav .container-fluid .nav-toggler{
+    border: none;
+    background-color: transparent;
+    color: rgb(187, 0, 0);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.botnav .container-fluid .nav-toggler:hover{
+    color: white;
+    background-color: rgb(187, 0, 0);
+    padding: 5px;
+}
+
+.botnav .container-fluid .nav-toggler:focus{
+    outline: 0;
+}
+
+.botnav .container-fluid .navbar-nav{
+    padding: 10px 5px;
+}
+
+.botnav .container-fluid .navbar-nav .nav-item{
+    padding: 2px 0px;
+}
+
+.botnav .container-fluid .navbar-nav .nav-item .nav-link{
+    color: rgb(187, 0, 0);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 4px;
+    border: 1px solid rgb(187, 0, 0);
+}
+
+.botnav .container-fluid .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+    background-color: rgb(187, 0, 0);
+}
+
+
+.botnav .container-fluid .navbar-nav .nav-item .dropdown-menu{
+    background-color: rgb(187, 0, 0);
+}
+
+.botnav .container-fluid .navbar-nav .nav-item .dropdown-menu-li .dropdown-item{
+    color: rgb(187, 0, 0);
+    background-color: white;
+}
+
+.botnav .container-fluid .navbar-nav .nav-item .dropdown-menu-li .dropdown-item:hover{
+    color: white;
+    background-color: rgb(187, 0, 0);
+}
+
+.dropdown-submenu-2{
+    padding: 4px 0px;
+    background-color: white;
+}
+
+.dropdown-submenu-2 .test{
+    color: rgb(187, 0, 0);
+    padding-left: 23px;
+    text-decoration: none;
+}
+
+.dropdown-submenu-2:hover{
+    background-color: rgb(187, 0, 0);
+}
+
+.dropdown-submenu-2:hover .test{
+    color: white;
+}
+
+.dropdown-submenu-2 .dropdown-menu li{
+    padding: 3px 0px;
+    padding-left: 3px;
+    color: rgb(187, 0, 0);
+    background-color: white;
+}
+
+.dropdown-submenu-2 .dropdown-menu li:hover{
+    background-color: rgb(187, 0, 0);
+}
+
+.dropdown-submenu-2 .dropdown-menu li a{
+    color: rgb(187, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown-submenu-2 .dropdown-menu li:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .midnav{
+        display: none;
+    }
+
+    .botnav{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .topnav .container-fluid{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .topnav .container-fluid .navbar-brand img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .topnav .container-fluid .navbar-brand h3{
+        padding: 13px 0px 0px 5px;
+        font-size: 30px;
+    }
+
+    .topnav .container-fluid .navbar-brand-ul{
+        flex-direction: column;
+    }
+}

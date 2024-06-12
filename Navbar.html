@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Murarka College</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Navbar.css">
+
+    <script>
+        function toggleFunction() {
+            if(document.getElementById('botnav').style.display == 'none') document.getElementById('botnav').style.display='block'
+            else if(document.getElementById('botnav').style.display == 'block') document.getElementById('botnav').style.display='none'
+            console.log(document.getElementById('botnav').style.display)
+        }
+
+        $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-body-tertiary text-center topnav">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="./images/logo.png" alt="Murarka College" />
+                <h3>Murarka College</h3>
+            </div>
+
+            <ul class="navbar-nav me-auto navbar-brand-ul">
+                <li class="navbar-brand-li">
+                    <img src="./images/naac.png" alt="NAAC" />
+                    <h5>NAAC Accredited</h5>
+                </li>
+                <li class="navbar-brand-li">
+                    <img src="./images/iso.png" alt="ISO" />
+                    <h5>ISO 9001:0000</h5>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-light text-center midnav">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false" href="#">About</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">History Of The College</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Principal Desk</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Mission, Vision & Goal</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Campus Map & Layout</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Strategic/ Prospective Plan</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Human Values And Professional Ethics</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Our Core Values</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Maintenance Policy</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Best Practices</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Institutional Distinctive</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Administration</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Organogram</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Governing Body</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Our Faculty</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Teacher's Council</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Non-Teaching Staff</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Code Of Conduct</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Disciplinary Rules</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Uniform Leave Rules</a></li>
+
+                        <li class="dropdown-menu-li dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Committee & Cell <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Anti Ragging Cell</a></li>
+                                <li><a tabindex="-1" href="#">Purchase Committee</a></li>
+                                <li><a tabindex="-1" href="#">Examination Committee</a></li>
+                                <li><a tabindex="-1" href="#">Grievance Redressal Cell</a></li>
+                                <li><a tabindex="-1" href="#">IT Management Committee</a></li>
+                                <li><a tabindex="-1" href="#">All Committee Members</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Academics</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Time Table</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Results</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Examination Section</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Intake Capacity</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Program Outcome</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Academic Calendar</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Holiday List</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Courses Offered</a></li>
+
+                        <li class="dropdown-menu-li dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Departments <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Bachelor Of Arts</a></li>
+                                <li><a tabindex="-1" href="#">Bachelor Of Science</a></li>
+                                <li><a tabindex="-1" href="#">Bachelor Of Commerce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Admission</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Guideline</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Eligibility Criteria</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Admission Committee</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Fees Structure</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Activities</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Announcements</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Alumni</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Activities</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Amenities</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NSS</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NCC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Sports & Games</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Students</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Rules & Regulations</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Student Support Services</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Skill Development Program</a></li>
+                        
+                        <li class="dropdown-menu-li dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Facilities <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">ICT Classroom</a></li>
+                                <li><a tabindex="-1" href="#">Remedial Coaching</a></li>
+                                <li><a tabindex="-1" href="#">Scholarship</a></li>
+                                <li><a tabindex="-1" href="#">Career Counselling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-expanded="false" href="#">IQAC</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">About IQAC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">AQAR</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Minutes of Meeting</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Action Taken Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Seminars & Workshops</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Academic And Administrative Audit</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Green Audit Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Quality Initiative</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">IQAC Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NIRF</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">SSR 2022-23</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Library</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">About The Library</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Library Rules</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Library Services</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">OPAC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">N-List</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Question Paper Archive</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">E-Resources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown9" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Research & Publications</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown9">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Research Activity</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Ph.D Holders</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Research Papers</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Books And Chapters</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Prospectus</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-expanded="false" href="#">E-Governance</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown10">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Feedback</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Online Grievance</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College ERP</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">E-Teachers Diary</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">LMS</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Students Profile Mapping System</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-light text-center botnav">
+        <div class="container-fluid">
+            <button class="nav-toggler" onclick="toggleFunction()">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="botnav" style="display: none;">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false" href="#">About</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">History Of The College</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Principal Desk</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Mission, Vision & Goal</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Campus Map & Layout</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Strategic/ Prospective Plan</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Human Values And Professional Ethics</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Our Core Values</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Maintenance Policy</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Best Practices</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Institutional Distinctive</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Administration</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Organogram</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Governing Body</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Our Faculty</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Teacher's Council</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Non-Teaching Staff</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Code Of Conduct</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Disciplinary Rules</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Uniform Leave Rules</a></li>
+
+                        <li class="dropdown-menu-li dropdown-submenu dropdown-submenu-2">
+                            <a class="test" tabindex="-1" href="#">Committee & Cell <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Anti Ragging Cell</a></li>
+                                <li><a tabindex="-1" href="#">Purchase Committee</a></li>
+                                <li><a tabindex="-1" href="#">Examination Committee</a></li>
+                                <li><a tabindex="-1" href="#">Grievance Redressal Cell</a></li>
+                                <li><a tabindex="-1" href="#">IT Management Committee</a></li>
+                                <li><a tabindex="-1" href="#">All Committee Members</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Academics</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Time Table</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Results</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Examination Section</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Intake Capacity</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Program Outcome</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Academic Calendar</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Holiday List</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Courses Offered</a></li>
+
+                        <li class="dropdown-menu-li dropdown-submenu dropdown-submenu-2">
+                            <a class="test" tabindex="-1" href="#">Departments <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Bachelor Of Arts</a></li>
+                                <li><a tabindex="-1" href="#">Bachelor Of Science</a></li>
+                                <li><a tabindex="-1" href="#">Bachelor Of Commerce</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Admission</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Guideline</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Eligibility Criteria</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Admission Committee</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Fees Structure</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Activities</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Announcements</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Alumni</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Activities</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Amenities</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NSS</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NCC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Sports & Games</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Students</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Rules & Regulations</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Student Support Services</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Skill Development Program</a></li>
+
+                        <li class="dropdown-menu-li dropdown-submenu dropdown-submenu-2">
+                            <a class="test" tabindex="-1" href="#">Facilities <i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">ICT Classroom</a></li>
+                                <li><a tabindex="-1" href="#">Remedial Coaching</a></li>
+                                <li><a tabindex="-1" href="#">Scholarship</a></li>
+                                <li><a tabindex="-1" href="#">Career Counselling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">IQAC</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">About IQAC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">AQAR</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Minutes of Meeting</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Action Taken Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Seminars & Workshops</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Academic And Administrative Audit</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Green Audit Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Quality Initiative</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">IQAC Report</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">NIRF</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">SSR 2022-23</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Library</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">About The Library</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Library Rules</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Library Services</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">OPAC</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">N-List</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Question Paper Archive</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">E-Resources</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Research & Publications</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Research Activity</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Ph.D Holders</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Research Papers</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Books And Chapters</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College Prospectus</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false" href="#">E-Governance</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Feedback</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Online Grievance</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">College ERP</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">E-Teachers Diary</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">LMS</a></li>
+                        <li class="dropdown-menu-li"><a class="dropdown-item" href="">Students Profile Mapping System</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
