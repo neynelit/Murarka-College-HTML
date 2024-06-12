@@ -1,0 +1,35 @@
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    padding-top: 7px;
+}
+
+.carousel-img{
+    transition: all 2s;
+    height: 300px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.carousel-img:hover{
+    transform: scale(1.15);
+}
+
+.notice-btn-list{
+    padding: 0;
+    margin: 0;
+}
+
+.notice-btn-list-row{
+    padding: 0;
+    margin: 0;
+}
+
+.notice-btn-list-col{
+    display: flex;
+    justify-content: center;
+}
+
+.notice-btn-list-col button{
+    width: 100px;
+}
